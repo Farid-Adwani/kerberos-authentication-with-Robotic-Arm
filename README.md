@@ -8,10 +8,6 @@ A server program that controls the robotic arm and listens for incoming connecti
 A client program that allows a doctor to control the robotic arm.
 The client program uses Kerberos authentication to securely connect to the server and control the arm. The arm is controlled with ROS, which provides a powerful platform for controlling robotic devices.
 
-To see the system in action, check out the included video in the ./videos folder named kerberos.mp4.
-
-[![Demo Video]          // Title
-(https://i.ytimg.com/vi/Hc79sDi3f0U/maxresdefault.jpg)] // Thumbnail
-(./video/kerberos.mp4)   
+[![Demo](Screenshots/1.png)](videos/kerberos.mp4) 
 
 Note: This project is still in development and should not be used in a production environment.
