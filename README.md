@@ -10,4 +10,8 @@ The client program uses Kerberos authentication to securely connect to the serve
 
 To see the system in action, check out the included video in the ./videos folder named kerberos.mp4.
 
+[![Demo Video]          // Title
+(https://i.ytimg.com/vi/Hc79sDi3f0U/maxresdefault.jpg)] // Thumbnail
+(./video/kerberos.mp4)   
+
 Note: This project is still in development and should not be used in a production environment.
