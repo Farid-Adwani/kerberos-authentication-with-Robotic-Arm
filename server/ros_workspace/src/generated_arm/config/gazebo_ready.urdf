@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot name="ready">
+    <link name="base_link">
+        <inertial>
+            <origin xyz="-0.00241378906876298 -1.03638504873882E-05 0.0229786696320582" rpy="0 0 0" />
+            <mass value="0.125687970903285" />
+            <inertia ixx="0.000132597193794362" ixy="-5.54339769745936E-08" ixz="2.99154940931258E-06" iyy="0.000144967233123241" iyz="3.55407428089301E-08" izz="0.000213806267861964" />
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://ready/meshes/base_link.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="0.898039215686275 0.898039215686275 0.898039215686275 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://ready/meshes/base_link.STL" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="base">
+        <inertial>
+            <origin xyz="-0.000728011580296187 0.014444743033441 0.022316547689835" rpy="0 0 0" />
+            <mass value="0.100547648959308" />
+            <inertia ixx="5.76361982973773E-05" ixy="-6.27373521044162E-06" ixz="-5.35179501574201E-06" iyy="6.01392147321194E-05" iyz="-9.84295480645579E-06" izz="6.17332943076656E-05" />
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://ready/meshes/base.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="0.850980392156863 0.850980392156863 0.850980392156863 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://ready/meshes/base.STL" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="base" type="continuous">
+        <origin xyz="0.0003 -0.0001 0.056" rpy="0 0 0" />
+        <parent link="base_link" />
+        <child link="base" />
+        <axis xyz="0 0 -1" />
+    </joint>
+    <link name="axis1">
+        <inertial>
+            <origin xyz="0.0555926124738068 0.022024653557034 0.00676376593117495" rpy="0 0 0" />
+            <mass value="0.0615776170036193" />
+            <inertia ixx="3.52355637996202E-05" ixy="-4.39132037716234E-05" ixz="-9.06469857703949E-06" iyy="8.59638225049525E-05" iyz="-5.26786116286118E-06" izz="0.000106948379167663" />
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://ready/meshes/axis1.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="0.850980392156863 0.850980392156863 0.850980392156863 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://ready/meshes/axis1.STL" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="axis1" type="continuous">
+        <origin xyz="0.016158 0.010059 0.040145" rpy="0 0 0" />
+        <parent link="base" />
+        <child link="axis1" />
+        <axis xyz="-0.50104 0.86542 0" />
+    </joint>
+    <link name="axis2">
+        <inertial>
+            <origin xyz="0.0165429667265043 0.0358835906287259 0.000651811689503706" rpy="0 0 0" />
+            <mass value="0.0932777746480594" />
+            <inertia ixx="3.05690785189914E-05" ixy="-2.4502063411223E-05" ixz="-9.78467559261523E-07" iyy="5.65173673784098E-05" iyz="-5.93684396785708E-07" izz="7.01340472553555E-05" />
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://ready/meshes/axis2.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://ready/meshes/axis2.STL" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="axis2" type="continuous">
+        <origin xyz="0.10611 0.05473 0.013401" rpy="0 0 0" />
+        <parent link="axis1" />
+        <child link="axis2" />
+        <axis xyz="-0.50104 0.86542 0" />
+    </joint>
+    <link name="rotation">
+        <inertial>
+            <origin xyz="0.0181371461477757 0.00771055705457602 0.00604126543439856" rpy="0 0 0" />
+            <mass value="0.0248973937377238" />
+            <inertia ixx="3.34498891903212E-06" ixy="-7.07499024123718E-07" ixz="-5.47452313753728E-08" iyy="5.59203158873394E-06" iyz="-1.88602775885656E-07" izz="4.8803281643042E-06" />
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://ready/meshes/rotation.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="0.898039215686275 0.898039215686275 0.898039215686275 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://ready/meshes/rotation.STL" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="rotation" type="continuous">
+        <origin xyz="0.071166 0.061585 -0.0028695" rpy="0 0 0" />
+        <parent link="axis2" />
+        <child link="rotation" />
+        <axis xyz="-0.86517 -0.5009 -0.024084" />
+    </joint>
+    <link name="up_down">
+        <inertial>
+            <origin xyz="0.0214586839771995 0.0169085886023392 -0.00962254056702813" rpy="0 0 0" />
+            <mass value="0.0230600607790296" />
+            <inertia ixx="5.46605669847698E-06" ixy="-2.63081713910363E-06" ixz="9.80599951880868E-07" iyy="5.63522109420185E-06" iyz="1.04672169444031E-06" izz="8.61751116394786E-06" />
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://ready/meshes/up_down.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="0 0.501960784313725 1 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://ready/meshes/up_down.STL" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="up_down" type="continuous">
+        <origin xyz="0.032807 -0.00078818 0.0089613" rpy="0 0 0" />
+        <parent link="rotation" />
+        <child link="up_down" />
+        <axis xyz="-0.4887 0.85292 -0.18357" />
+    </joint>
+    <link name="gripper">
+        <inertial>
+            <origin xyz="0.0360899471870412 0.00140467113581788 -0.0147334022764676" rpy="0 0 0" />
+            <mass value="0.0202381201179546" />
+            <inertia ixx="1.78087102339838E-06" ixy="-1.04679966469341E-06" ixz="1.29575502499914E-06" iyy="3.71572602966896E-06" iyz="6.75272233643624E-07" izz="3.92128177038014E-06" />
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://ready/meshes/gripper.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="0.898039215686275 0.898039215686275 0.898039215686275 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://ready/meshes/gripper.STL" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="gripper" type="continuous">
+        <origin xyz="0.027457 0.036232 -0.0033203" rpy="0 0 0" />
+        <parent link="up_down" />
+        <child link="gripper" />
+        <axis xyz="-0.28003 -0.35262 -0.89289" />
+    </joint>
+    <transmission name="trans_base">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="base">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="base_motor">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="trans_axis1">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="axis1">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="axis1_motor">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="trans_axis2">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="axis2">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="axis2_motor">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="trans_rotation">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="rotation">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="rotation_motor">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="trans_up_down">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="up_down">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="up_down_motor">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="trans_gripper">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="gripper">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="gripper_motor">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <gazebo>
+        <plugin name="gazebo_ros_control">
+            <robotNamespace>/</robotNamespace>
+        </plugin>
+    </gazebo>
+</robot>
+

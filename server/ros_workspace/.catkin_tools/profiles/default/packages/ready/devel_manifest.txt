@@ -1,0 +1,5 @@
+ready
+/home/farid/Documents/pfa/ros_workspace/devel/.private/ready/cmake.lock /home/farid/Documents/pfa/ros_workspace/devel/./cmake.lock
+/home/farid/Documents/pfa/ros_workspace/devel/.private/ready/lib/pkgconfig/ready.pc /home/farid/Documents/pfa/ros_workspace/devel/lib/pkgconfig/ready.pc
+/home/farid/Documents/pfa/ros_workspace/devel/.private/ready/share/ready/cmake/readyConfig.cmake /home/farid/Documents/pfa/ros_workspace/devel/share/ready/cmake/readyConfig.cmake
+/home/farid/Documents/pfa/ros_workspace/devel/.private/ready/share/ready/cmake/readyConfig-version.cmake /home/farid/Documents/pfa/ros_workspace/devel/share/ready/cmake/readyConfig-version.cmake

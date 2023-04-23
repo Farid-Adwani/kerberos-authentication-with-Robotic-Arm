@@ -1,0 +1,6 @@
+devel_space: /home/farid/Documents/pfa/ros_workspace/devel
+install: false
+install_space: /home/farid/Documents/pfa/ros_workspace/install
+profile: default
+source_space: /home/farid/Documents/pfa/ros_workspace/src
+workspace: /home/farid/Documents/pfa/ros_workspace

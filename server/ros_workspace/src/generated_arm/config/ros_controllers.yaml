@@ -1,0 +1,40 @@
+arm_controller:
+  type: effort_controllers/JointTrajectoryController
+  joints:
+    - base
+    - axis1
+    - axis2
+    - rotation
+    - up_down
+    - gripper
+  gains:
+    base:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    axis1:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    axis2:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    rotation:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    up_down:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    gripper:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1

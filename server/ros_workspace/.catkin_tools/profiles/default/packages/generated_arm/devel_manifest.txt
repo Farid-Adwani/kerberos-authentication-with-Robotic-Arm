@@ -1,0 +1,5 @@
+generated_arm
+/home/farid/Documents/pfa/ros_workspace/devel/.private/generated_arm/cmake.lock /home/farid/Documents/pfa/ros_workspace/devel/./cmake.lock
+/home/farid/Documents/pfa/ros_workspace/devel/.private/generated_arm/lib/pkgconfig/generated_arm.pc /home/farid/Documents/pfa/ros_workspace/devel/lib/pkgconfig/generated_arm.pc
+/home/farid/Documents/pfa/ros_workspace/devel/.private/generated_arm/share/generated_arm/cmake/generated_armConfig-version.cmake /home/farid/Documents/pfa/ros_workspace/devel/share/generated_arm/cmake/generated_armConfig-version.cmake
+/home/farid/Documents/pfa/ros_workspace/devel/.private/generated_arm/share/generated_arm/cmake/generated_armConfig.cmake /home/farid/Documents/pfa/ros_workspace/devel/share/generated_arm/cmake/generated_armConfig.cmake

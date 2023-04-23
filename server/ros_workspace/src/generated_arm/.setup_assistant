@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: ready
+    relative_path: urdf/ready.urdf
+    xacro_args: ""
+  SRDF:
+    relative_path: config/ready.srdf
+  CONFIG:
+    author_name: farid
+    author_email: farid.adwani@insat.ucar.tn
+    generated_timestamp: 1679322350

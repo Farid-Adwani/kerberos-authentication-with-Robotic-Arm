@@ -1,0 +1,13 @@
+controller_list:
+  - name: fake_arm_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - base
+      - axis1
+      - axis2
+      - rotation
+      - up_down
+      - gripper
+initial:  # Define initial robot poses per group
+  - group: arm
+    pose: vertical

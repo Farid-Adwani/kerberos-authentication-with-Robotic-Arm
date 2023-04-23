@@ -1,0 +1,8 @@
+prefix=/home/farid/Documents/pfa/ros_workspace/install
+
+Name: generated_arm
+Description: Description of generated_arm
+Version: 0.3.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
